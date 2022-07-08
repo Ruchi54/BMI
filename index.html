@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=/, initial-scale=1.0" />
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><span>B</span>ody <span>M</span>ass <span>I</span>ndex</h1>
+
+    <form class="form">
+      <div class="age">
+        <input type="number" id="age" />
+        <label for="Age">Age</label>
+
+        <label class="container" for="Female">
+          Female
+          <input type="radio" id="female" name="radio" value="Female" />
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container" for="Male"
+          >Male
+          <input type="radio" id="male" name="radio" value="Male" />
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="mesure">
+        <input type="number" id="height" />
+        <label for="Height">Height (cm)</label>
+
+        <input type="number" id="weight" />
+        <label for="Weight">Weight (kg)</label>
+      </div>
+
+      <div class="buttons">
+        <button type="button" id="submit" onclick="add()">Submit</button>
+        <input id="reset" type="reset" onclick="reset()" value="Reset" />
+      </div>
+    </form>
+    <p id="display_bmi"></p>
+    <p id="display_gender"></p>
+    <p id="display_age"></p>
+    <p id="display_height"></p>
+    <p id="display_weight"></p>
+
+    <script src="data.js"></script>
+  </body>
+</html>
